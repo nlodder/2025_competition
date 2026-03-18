@@ -5,7 +5,7 @@ from PyQt5.QtGui import (QPixmap)
 from PyQt5.QtCore import (Qt, QTimer, pyqtSignal)
 from std_msgs.msg import String
 from geometry_msgs.msg import Twist
-from openai import OpenAI
+#from openai import OpenAI
 from python_qt_binding import loadUi
 
 import csv
@@ -334,6 +334,10 @@ class Window(QtWidgets.QMainWindow):
         '''
         Using OpenAi's API come up with a story for the crime.
         '''
+        return
+    
+        # 2026-03-18 MI: This section is no longer working after OpenAi updated
+        # their package requirements.
         URL = "https://phas.ubc.ca/~miti/ENPH353/ENPH353Keys.txt"
 
         response = requests.get(URL)
