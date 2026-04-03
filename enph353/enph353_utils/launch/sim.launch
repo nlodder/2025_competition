@@ -13,7 +13,7 @@
 	</include>
 
 	<!-- Spawn the robot -->
-	<include file="$(find enph353_utils)/launch/robots.launch"/>
+	<!-- <include file="$(find enph353_utils)/launch/robots.launch"/> -->
 
 	<!-- Spawn the NPCs -->
 	<include file="$(find enph353_utils)/launch/npcs.launch">
